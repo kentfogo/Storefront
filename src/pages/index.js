@@ -12,7 +12,6 @@ const Homepage = () => {
 
 
       <Layout  pageTitle='Home' />
-        <Header />
         <OrderDiv />
         <Gallery />
         <Footer />
