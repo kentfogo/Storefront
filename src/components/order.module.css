@@ -35,6 +35,7 @@ font-family: 'Sora', sans-serif;
 
 .line{
   width: 70%;
+  border-bottom:3px solid lightgrey;
   margin-left: auto;
   margin-right: auto;
 }

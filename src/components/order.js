@@ -26,7 +26,7 @@ const OrderDiv = () =>{
         <h3>WE STILL OFFER CURBSIDE AT ARRIVAL (423) 756-0303</h3>
       </div>
       <div>
-        <hLine color = 'blue' />
+        <hr></hr>
       </div>
     </main>
 
