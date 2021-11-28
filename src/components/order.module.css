@@ -29,6 +29,7 @@ font-family: 'Sora', sans-serif;
 
 .info{
   width: 75%;
+  flex-wrap: wrap;
 
 }
 
