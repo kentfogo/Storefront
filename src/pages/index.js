@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Header from '../components/header'
 import OrderDiv from '../components/order'
+import Gallery from '../components/gallery'
 import Footer from '../components/footer'
 
 const Homepage = () => {
@@ -13,6 +14,7 @@ const Homepage = () => {
       <Layout  pageTitle='Home' />
         <Header />
         <OrderDiv />
+        <Gallery />
         <Footer />
 
 

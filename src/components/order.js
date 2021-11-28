@@ -3,6 +3,16 @@ import { Link } from 'gatsby'
 import {container, button, buttonCon, info, line } from "./order.module.css"
 
 const OrderDiv = () =>{
+  const hLine = ({ color }) => (
+    <hr
+      style={{
+        color: color,
+        backgroundColor: color,
+        height: 5
+      }}
+      />
+  );
+
   return(
     <main className={container}>
       <div className={buttonCon}>
@@ -15,9 +25,13 @@ const OrderDiv = () =>{
         <h3>PICK-UP IN STORE OR DELIVERY!</h3>
         <h3>WE STILL OFFER CURBSIDE AT ARRIVAL (423) 756-0303</h3>
       </div>
-      <hr className={line}></hr>
-
+      <div>
+        <hLine color = 'blue' />
+      </div>
     </main>
+
+
+
   )
 }
 
