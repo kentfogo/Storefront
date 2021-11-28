@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+
+.container{
+  background-image: url('../images/pastriesbanner.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+  object-fit: contain;
+}
+
+.button {
+  color:#fff;
+  background-color: #15cdfc;
+  border-color: #15cdfc;
+  border-radius: 300px;
+  padding: 21px 34px;
+  transition: .1s opacity linear;
+  font-size: 14px;
+
+}
