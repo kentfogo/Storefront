@@ -1,4 +1,5 @@
-import { React, useState } from "react";
+import { useState } from "react"
+import React from 'react'
 import { styledBurger } from "./burger.module.css";
 import styled from 'styled-components';
 
@@ -9,7 +10,7 @@ const Burger = () =>{
 
   return(
 
-    <div className = {styled-burger} open={open} onClick={() => setOpen(!open)}>
+    <div className = {styledBurger} open={open} onClick={() => setOpen(!open)}>
       <div />
       <div />
       <div />

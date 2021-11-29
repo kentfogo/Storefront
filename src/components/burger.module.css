@@ -1,6 +1,6 @@
 
 
-.styled-burger{
+.styledBurger{
   width: 2rem;
   height: 2rem;
   position: fixed;
@@ -13,7 +13,7 @@
 }
 
 @media(max-width: 768px) {
-  .styled-burger{
+  .styledBurger{
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
@@ -21,24 +21,23 @@
   }
 }
 
-.styled-burger div{
+.styledBurger div{
   width: 2rem;
   height: 0.25rem;
   background-color: #333;
   border-radius: 10px;
 
-
-
 }
 
-.styled-burger .active .bar:nth-child(2) {
+
+.styledBurger .active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.styled-burger .active .bar:nth-child(1) {
+.styledBurger .active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
-.styled-burger .active .bar:nth-child(3) {
+.styledBurger .active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }

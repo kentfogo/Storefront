@@ -1,4 +1,5 @@
-import { React, useState } from "react"
+import { useState } from "react"
+import React from 'react'
 import { Link } from 'gatsby'
 import { container, nav, navMenu, navLinks, span, heading, button, bar, hamburger} from "./layout.module.css";
 import Burger from "./burger.js"
