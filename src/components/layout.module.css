@@ -94,11 +94,13 @@
 @media screen and (max-width: 768px){
   .nav-menu {
     position: fixed;
+    display: none;
     left: -100%;
     top: 5rem;
-    flex-direction: column;
+    /*flex-direction: column;*/
+    flex-flow: column nowrap;
     background-color: #fff;
-    width: 10px;
+    width: 300px;
     text-align: center;
     transition: .3s;
     box-shadow: 0 10px 27px rgba(0,0,0,.05);
@@ -108,7 +110,7 @@
     left:0;
   }
 
-  .nav-links{
+  .nav-inks{
     margin: 2.5rem 0;
   }
 

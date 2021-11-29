@@ -1,6 +1,7 @@
-import * as React from "react"
+import * as React, { useState } from "react"
 import { Link } from 'gatsby'
 import { container, nav, navMenu, navLinks, span, heading, button, bar, hamburger} from "./layout.module.css";
+import styled from 'styled-components';
 
 //const hamburger = document.querySelector("hamburger");
 //const navMenu = document.querySelector("nav-menu");
@@ -24,22 +25,20 @@ import { container, nav, navMenu, navLinks, span, heading, button, bar, hamburge
 const Layout = ({ pageTitle,  pageHeading, children }) => {
 
 
+
   return(
     <main className = {container}>
     <title>{pageTitle}</title>
+
       <nav className={nav}>
         <Link to="/" className={navLinks}><span className={span}>Bakery Boys</span></Link>
-        <ul className={navMenu}>
+        <ul className={navMenu }>
         <li><Link to="/menu" className={navLinks}>Menu</Link></li>
         <li><Link to="/products" className={navLinks}>Products</Link></li>
         <li><Link to="/about" className={navLinks}>About Us</Link></li>
         <li><Link to="/contact" className={navLinks}>Contact Us</Link></li>
         </ul>
-        <div className={hamburger}>
-          <span className={bar}></span>
-          <span className={bar}></span>
-          <span className={bar}></span>
-        </div>
+        <Burger />
       </nav>
       <h1>The Goods Are Baked. But the Baked Are Boys.</h1>
       <button className={button}>Order Now</button>
