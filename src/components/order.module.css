@@ -16,6 +16,7 @@ font-family: 'Sora', sans-serif;
   background-color: #15cdfc;
   border-color: #15cdfc;
   margin-top: 100px;
+  margin-left: 100px;
   border-radius: 300px;
   padding: 21px 34px;
   transition: .1s opacity linear;
@@ -24,12 +25,16 @@ font-family: 'Sora', sans-serif;
 
 .buttonCon{
   width: 25%;
+  margin-top: 75px;
+
 
 }
 
 .info{
   width: 75%;
   flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
 }
 
