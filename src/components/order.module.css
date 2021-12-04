@@ -6,7 +6,7 @@ font-family: 'Sora', sans-serif;
 .container{
   display: flex;
   margin-top:0;
-  width: 60%;
+  width: 100%;
   padding: 10px;
 
 }
@@ -16,7 +16,7 @@ font-family: 'Sora', sans-serif;
   background-color: #15cdfc;
   border-color: #15cdfc;
   margin-top: 100px;
-  margin-left: 100px;
+  margin-left: 250px;
   border-radius: 300px;
   padding: 21px 34px;
   transition: .1s opacity linear;
@@ -31,11 +31,17 @@ font-family: 'Sora', sans-serif;
 }
 
 .info{
-  width: 75%;
+  width: 50%;
   flex-wrap: wrap;
   padding-top: 100px;
   padding-bottom: 100px;
 
+}
+
+.words{
+  position: relative;
+  margin: 0 auto;
+  right: 300px;
 }
 
 .line{
