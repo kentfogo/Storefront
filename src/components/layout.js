@@ -2,7 +2,7 @@ import { useState } from "react"
 import React from 'react'
 import { Link } from 'gatsby'
 import { container, nav, navMenu, navLinks, span, heading, button, bar, hamburger} from "./layout.module.css";
-import Burger from "./burger.js"
+
 import styled from 'styled-components';
 
 //const hamburger = document.querySelector("hamburger");
@@ -40,7 +40,7 @@ const Layout = ({ pageTitle,  pageHeading, children }) => {
         <li><Link to="/about" className={navLinks}>About Us</Link></li>
         <li><Link to="/contact" className={navLinks}>Contact Us</Link></li>
         </ul>
-        <Burger />
+
       </nav>
       <h1>The Goods Are Baked. But the Baked Are Boys.</h1>
       <button className={button}>Order Now</button>

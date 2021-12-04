@@ -6,6 +6,8 @@ import OrderDiv from '../components/order'
 import Gallery from '../components/gallery'
 import Footer from '../components/footer'
 
+
+
 const Homepage = () => {
   return (
     <>
