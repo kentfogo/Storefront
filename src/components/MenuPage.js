@@ -2,6 +2,7 @@ import { useState } from "react"
 import React from 'react'
 import { Link } from 'gatsby'
 import { container, nav, navMenu, navLinks, span, heading, button, bar, hamburger} from "./menu.module.css";
+import MenuDiv from "./MenusDiv.js"
 import styled from 'styled-components';
 
 const MenuLayout = ({ pageTitle,  pageHeading, children }) => {
@@ -22,8 +23,7 @@ const MenuLayout = ({ pageTitle,  pageHeading, children }) => {
         </ul>
 
       </nav>
-      <h1>The Goods Are Baked. But the Baked Are Boys.</h1>
-      <button className={button}>Order Now</button>
+      <MenuDiv />
       <h1 className={heading}>{pageHeading}</h1>
       {children}
     </main>

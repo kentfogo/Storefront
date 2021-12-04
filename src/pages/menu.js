@@ -1,13 +1,15 @@
 import * as React from "react"
 import { Link } from 'gatsby'
-import MenuPage from '../components/MenuPage'
+import MenuLayout from '../components/MenuPage'
+import Footer from '../components/footer'
 
 const Menu = () => {
   return (
     <main>
-      <MenuPage pageheading='Contact page' pageTitle='Menu'>
-        
-       </MenuPage>
+      <MenuLayout pageheading='Contact page' pageTitle='Menu'>
+
+       </MenuLayout>
+       <Footer />
     </main>
   )
 }

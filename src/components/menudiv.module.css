@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+*{
+font-family: 'Sora', sans-serif;
+}
+
+.container{
+  margin: 0 auto;
+}
+
+.buttonContainer{
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+
+
+}
+
+.button{
+  color:#fff;
+  background-color: #15cdfc;
+  border-color: #15cdfc;
+  margin-top: 100px;
+  margin-left: 250px;
+  border-radius: 300px;
+  padding: 21px 34px;
+  transition: .1s opacity linear;
+  font-size: 14px;
+}
