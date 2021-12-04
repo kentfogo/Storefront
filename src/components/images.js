@@ -15,7 +15,7 @@ export function Gallery1() {
       height= {900}
       objectFit= "cover"
       loading="eager"
-      
+
 
       />
     )
@@ -100,4 +100,20 @@ export function Gallery6() {
     loading="eager"
       />
     )
+}
+
+export function MenuBanner() {
+  return(
+    <StaticImage
+      src="../images/menuimage.jpg"
+      alt="tasty sandwich"
+      placeholder="blurred"
+      loading="eager"
+      layout="fullWidth"
+      style = {{
+        width: "100%",
+        height: "100vh"
+      }}
+    />
+  )
 }
