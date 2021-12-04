@@ -10,6 +10,7 @@ const MenuLayout = ({ pageTitle,  pageHeading, children }) => {
 
 
   return(
+    <>
     <main className = {container}>
     <title>{pageTitle}</title>
 
@@ -23,10 +24,16 @@ const MenuLayout = ({ pageTitle,  pageHeading, children }) => {
         </ul>
 
       </nav>
-      <MenuDiv />
+
       <h1 className={heading}>{pageHeading}</h1>
       {children}
+
     </main>
+
+
+      <MenuDiv />
+    </>
+
   )
 }
 

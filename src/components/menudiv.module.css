@@ -13,14 +13,16 @@ font-family: 'Sora', sans-serif;
   flex-flow: column;
 
 
+
 }
 
 .button{
   color:#fff;
+  font-weight: bolder;
+  letter-spacing: .2rem;
   background-color: #15cdfc;
   border-color: #15cdfc;
   margin-top: 100px;
-  margin-left: 250px;
   border-radius: 300px;
   padding: 21px 34px;
   transition: .1s opacity linear;

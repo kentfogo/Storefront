@@ -6,8 +6,7 @@ import Footer from '../components/footer'
 const Menu = () => {
   return (
     <main>
-      <MenuLayout pageheading='Contact page' pageTitle='Menu'>
-
+      <MenuLayout pageTitle='Menu'>
        </MenuLayout>
        <Footer />
     </main>
