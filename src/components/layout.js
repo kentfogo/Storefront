@@ -23,16 +23,17 @@ const Layout = ({ pageTitle,  pageHeading, children }) => {
       </nav>
 
       <nav className = {hamnav}>
-        <label for = {hamburger}>&#9776;</label>
-        <input type = "checkbox" className={hamburger}/>
+        <label htmlFor = {hamburger}>&#9776;</label>
+        <input type = "checkbox" className= {hamburger}/>
 
-        <div className={hamItems}>
+        <div className = {hamItems}>
           <li><Link to="/menu" >Menu</Link></li>
           <li><Link to="/products">Products</Link></li>
           <li><Link to="/about" >About Us</Link></li>
           <li><Link to="/contact">Contact Us</Link></li>
         </div>
       </nav>
+
       <h1>The Goods Are Baked. But the Baked Are Boys.</h1>
       <button className={button}>Order Now</button>
       <h1 className={heading}>{pageHeading}</h1>
