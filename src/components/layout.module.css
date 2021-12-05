@@ -144,7 +144,7 @@
     }
 
     .hamItems {display: none}
-    .hamnav input:checked ~ .hamIems {display: block;}
+    .hamnav input:checked ~ .hamItems {display: block;}
 
 
 }

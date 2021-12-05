@@ -27,10 +27,10 @@ const Layout = ({ pageTitle,  pageHeading, children }) => {
         <input type = "checkbox" className={hamburger}/>
 
         <div className={hamItems}>
-          <li><Link to="/menu" className={navLinks}>Menu</Link></li>
-          <li><Link to="/products" className={navLinks}>Products</Link></li>
-          <li><Link to="/about" className={navLinks}>About Us</Link></li>
-          <li><Link to="/contact" className={navLinks}>Contact Us</Link></li>
+          <li><Link to="/menu" >Menu</Link></li>
+          <li><Link to="/products">Products</Link></li>
+          <li><Link to="/about" >About Us</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
         </div>
       </nav>
       <h1>The Goods Are Baked. But the Baked Are Boys.</h1>
