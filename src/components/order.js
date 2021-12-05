@@ -18,19 +18,22 @@ const OrderDiv = () =>{
       <div className={info}>
         <button className={button}>Order Now</button>
       </div>
-      <div className={info}>
-        <div className={words}>
-        <h3>HOURS - MON-FRI 7AM - 5PM, SAT 7AM-4PM, CLOSED SUN.</h3>
-        <h3>*BREAKFAST SERVED FROM 7AM-11AM</h3>
-        <h3>*LUNCH SERVED FROM 11AM-3PM</h3>
-        <h3>PICK-UP IN STORE OR DELIVERY!</h3>
-        <h3>WE STILL OFFER CURBSIDE AT ARRIVAL (423) 756-0303</h3>
-      </div>
-      </div>
-      <div>
-        <hr></hr>
-      </div>
+        <div className={info}>
+          <div className={words}>
+            <h3>HOURS - MON-FRI 7AM - 5PM, SAT 7AM-4PM, CLOSED SUN.</h3>
+            <h3>*BREAKFAST SERVED FROM 7AM-11AM</h3>
+            <h3>*LUNCH SERVED FROM 11AM-3PM</h3>
+            <h3>PICK-UP IN STORE OR DELIVERY!</h3>
+            <h3>WE STILL OFFER CURBSIDE AT ARRIVAL (423) 756-0303</h3>
+            <div className={line}></div>
+          </div>
+        </div>
+
+
+
     </main>
+
+
 
 
 

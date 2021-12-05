@@ -1,32 +1,11 @@
 import { useState } from "react"
 import React from 'react'
 import { Link } from 'gatsby'
-import { container, nav, navMenu, navLinks, span, heading, button, bar, hamburger} from "./layout.module.css";
+import { container, nav, navMenu, navLinks, span, heading, button, hamburger, hamnav, hamItems} from "./layout.module.css";
 
 import styled from 'styled-components';
 
-//const hamburger = document.querySelector("hamburger");
-//const navMenu = document.querySelector("nav-menu");
-
-//hamburger.addEventListener("click", mobileMenu);
-
-//function mobileMenu() {
-//  hamburger.classList.toggle("active");
-//  navMenu.classList.toggle("active");
-//}
-
-//const navLinks = document.querySelectionAll(".navLinks");
-
-//navLinks.forEach(n=> n.addEventListener("click", closeMenu));
-
-//function closeMenu() {
-  //hamburger.classList.remove("active");
-  //navMenu.classList.remove("active");
-//}
-
 const Layout = ({ pageTitle,  pageHeading, children }) => {
-
-
 
   return(
     <main className = {container}>
@@ -35,12 +14,24 @@ const Layout = ({ pageTitle,  pageHeading, children }) => {
       <nav className={nav}>
         <Link to="/" className={navLinks}><span className={span}>Bakery Boys</span></Link>
         <ul className={navMenu }>
-        <li><Link to="/menu" className={navLinks}>Menu</Link></li>
-        <li><Link to="/products" className={navLinks}>Products</Link></li>
-        <li><Link to="/about" className={navLinks}>About Us</Link></li>
-        <li><Link to="/contact" className={navLinks}>Contact Us</Link></li>
-        </ul>
+          <li><Link to="/menu" className={navLinks}>Menu</Link></li>
+          <li><Link to="/products" className={navLinks}>Products</Link></li>
+          <li><Link to="/about" className={navLinks}>About Us</Link></li>
+          <li><Link to="/contact" className={navLinks}>Contact Us</Link></li>
 
+        </ul>
+      </nav>
+
+      <nav className = {hamnav}>
+        <label for = {hamburger}>&#9776;</label>
+        <input type = "checkbox" className={hamburger}/>
+
+        <div className={hamItems}>
+          <li><Link to="/menu" className={navLinks}>Menu</Link></li>
+          <li><Link to="/products" className={navLinks}>Products</Link></li>
+          <li><Link to="/about" className={navLinks}>About Us</Link></li>
+          <li><Link to="/contact" className={navLinks}>Contact Us</Link></li>
+        </div>
       </nav>
       <h1>The Goods Are Baked. But the Baked Are Boys.</h1>
       <button className={button}>Order Now</button>

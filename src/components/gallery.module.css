@@ -5,7 +5,7 @@ font-family: 'Sora', sans-serif;
 
 .container{
   display: block;
-  margin: auto;
+  margin: 0 auto;
   padding: 10px;
   position: relative;
 }
