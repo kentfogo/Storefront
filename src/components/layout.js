@@ -2,7 +2,7 @@ import { useState } from "react"
 import React from 'react'
 import { Link } from 'gatsby'
 import { container, nav, navMenu, navLinks, span, heading, button} from "./layout.module.css";
-import NavBar from "./NavBar/index.js"
+
 
 import styled from 'styled-components';
 
@@ -24,7 +24,7 @@ const Layout = ({ pageTitle,  pageHeading, children }) => {
 
       </nav>
 
-      <NavBar />
+
 
 
 

@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import { container, nav, navMenu, navLinks, span, heading, button, bar, hamburger} from "./menu.module.css";
 import MenuDiv from "./MenusDiv.js"
 import styled from 'styled-components';
+import NavBar from "./NavBar/index.js"
 
 
 const MenuLayout = ({ pageTitle,  pageHeading, children }) => {
@@ -14,7 +15,7 @@ const MenuLayout = ({ pageTitle,  pageHeading, children }) => {
     <>
     <main className = {container}>
     <title>{pageTitle}</title>
-  
+    <NavBar />
       /*<nav className={nav}>
         <Link to="/" className={navLinks}><span className={span}>Bakery Boys</span></Link>
         <ul className={navMenu }>
