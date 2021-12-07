@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaBars, FaTimes } from "react-icons/fa"
 import { IconContext } from "react-icons/lib"
-import { Nav, NavbarContainer, NavIcon, NavLogo, MobileIcon} from "./NavbarElements"
+import { Nav, NavbarContainer, NavIcon, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from "./NavbarElements"
 
 
 const Navbar = () =>{
@@ -36,6 +36,16 @@ const Navbar = () =>{
           <MobileIcon onCLick={handleClick}>
             {click ? <FaTimes /> : <FaBars />}
           </MobileIcon>
+          <NavMenu onCLick={handleCLick} click={click}>
+          <NavItem>
+            <NavLinks to="/">Home</NavLinks>
+          </NavItem>
+          <NavItem>
+            <NavLinks to="/menu">Menu</NavLinks>
+          </NavItem>
+          <NavItem>
+            <NavLinks to="/products">Products</NavLinks>
+          </NavItem>
         </NavbarContainer>
 
       </Nav>
