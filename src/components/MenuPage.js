@@ -5,6 +5,7 @@ import { container, nav, navMenu, navLinks, span, heading, button, bar, hamburge
 import MenuDiv from "./MenusDiv.js"
 import styled from 'styled-components';
 
+
 const MenuLayout = ({ pageTitle,  pageHeading, children }) => {
 
 
@@ -13,8 +14,8 @@ const MenuLayout = ({ pageTitle,  pageHeading, children }) => {
     <>
     <main className = {container}>
     <title>{pageTitle}</title>
-
-      <nav className={nav}>
+  
+      /*<nav className={nav}>
         <Link to="/" className={navLinks}><span className={span}>Bakery Boys</span></Link>
         <ul className={navMenu }>
         <li><Link to="/menu" className={navLinks}>Menu</Link></li>
@@ -23,7 +24,8 @@ const MenuLayout = ({ pageTitle,  pageHeading, children }) => {
         <li><Link to="/contact" className={navLinks}>Contact Us</Link></li>
         </ul>
 
-      </nav>
+
+      </nav>*/
 
       <h1 className={heading}>{pageHeading}</h1>
       {children}

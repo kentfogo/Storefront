@@ -7,6 +7,8 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
