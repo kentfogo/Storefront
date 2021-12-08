@@ -3,13 +3,14 @@ import { DiScala } from "react-icons/Di"
 import styled from "styled-components"
 import pastry from "./pastriesbanner.jpeg"
 
+
 export const Nav = styled.nav`
 background: ${({ active }) =>
   active
     ? "#fff"
     : "linear-gradient(to bottom,  rgba(255,255,255, 0.9) 0%,rgba(255,255,255,0) 100%)"};
 
-  height: 80px;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,6 +19,10 @@ background: ${({ active }) =>
   top: 0;
   z-index: 999;
   background-image: url(${pastry});
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
 
 
   @media screen and (max-width: 960px) {
@@ -42,6 +47,7 @@ export const NavLogo = styled(Link)`
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
+
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -100,7 +106,7 @@ export const NavLinks = styled(Link)`
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Sora", sans-serif;
 
   @media screen and (max-width: 960px) {
     text-align: center;
