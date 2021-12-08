@@ -23,7 +23,7 @@ background: ${({ active }) =>
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
-
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
 
   @media screen and (max-width: 960px) {
     background: ${({ click }) => (click ? "#fff" : "transparent")};
@@ -47,7 +47,8 @@ export const NavLogo = styled(Link)`
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
-
+  font-family: "Sora", sans-serif;
+  color: #fff;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -55,6 +56,7 @@ export const NavLogo = styled(Link)`
 
 export const NavIcon = styled(DiScala)`
   margin: 0 0.5rem 0 2rem;
+
 `
 
 export const MobileIcon = styled.div`
@@ -107,12 +109,14 @@ export const NavLinks = styled(Link)`
   padding: 0.5rem 1rem;
   height: 100%;
   font-family: "Sora", sans-serif;
+  color: #fff;
 
   @media screen and (max-width: 960px) {
     text-align: center;
     padding: 2rem;
     width: 100%;
     display: table;
+    color: black;
 
     &:hover {
       color: #ff4040;
