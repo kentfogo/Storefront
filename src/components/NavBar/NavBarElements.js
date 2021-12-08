@@ -17,6 +17,7 @@ background: ${({ active }) =>
   position: sticky;
   top: 0;
   z-index: 999;
+  background-image: url(${pastry});
 
 
   @media screen and (max-width: 960px) {
@@ -32,7 +33,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   max-width: 1000px;
-  background-image: url(${pastry});
+
 
 `
 
