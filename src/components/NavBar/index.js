@@ -42,8 +42,8 @@ const Navbar = () => {
               <NavIcon />
               Baked Boys
             </NavLogo>
-            <MobileIcon onClick={handleClick}>
-              {click ? <FaTimes /> : <FaBars />}
+            <MobileIcon onClick={handleClick} >
+              {click ? <FaTimes color = "#fff"/> : <FaBars color = "#fff"/>}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>

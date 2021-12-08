@@ -62,6 +62,7 @@ export const NavIcon = styled(DiScala)`
 
 export const MobileIcon = styled.div`
   display: none;
+  
 
   @media screen and (max-width: 960px) {
     display: block;
