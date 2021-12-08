@@ -1,12 +1,14 @@
 import { Link } from "gatsby"
 import { DiScala } from "react-icons/Di"
 import styled from "styled-components"
+import pastry from "./pastriesbanner.jpeg"
 
 export const Nav = styled.nav`
-  background: ${({ active }) =>
-    active
-      ? "#fff"
-      : "linear-gradient(to bottom,  rgba(255,255,255, 0.9) 0%,rgba(255,255,255,0) 100%)"};
+background: ${({ active }) =>
+  active
+    ? "#fff"
+    : "linear-gradient(to bottom,  rgba(255,255,255, 0.9) 0%,rgba(255,255,255,0) 100%)"};
+
   height: 80px;
   display: flex;
   justify-content: center;
@@ -15,6 +17,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
+
 
   @media screen and (max-width: 960px) {
     background: ${({ click }) => (click ? "#fff" : "transparent")};
@@ -29,6 +32,8 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   max-width: 1000px;
+  background-image: url(${pastry});
+
 `
 
 export const NavLogo = styled(Link)`
