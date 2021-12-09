@@ -10,7 +10,7 @@ background: ${({ active }) =>
     ? "#fff"
     : "linear-gradient(to bottom,  rgba(255,255,255, 0.9) 0%,rgba(255,255,255,0) 100%)"};
 
-  height: 40vh;
+  height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,6 +53,8 @@ export const NavLogo = styled(Link)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
+  position: relative;
+  bottom: 100px;
 `
 
 export const NavIcon = styled(DiScala)`
@@ -62,7 +64,7 @@ export const NavIcon = styled(DiScala)`
 
 export const MobileIcon = styled.div`
   display: none;
-  
+
 
   @media screen and (max-width: 960px) {
     display: block;
@@ -97,9 +99,13 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+  position: relative;
+  bottom: 100px;
 
   @media screen and (max-width: 960px) {
     width: 100%;
+    position: relative;
+    top: 100px;
   }
 `
 
