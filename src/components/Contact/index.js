@@ -1,6 +1,8 @@
 import React from "react";
-
 import { Form, Input, InputNumber, Button } from 'antd';
+import {
+Container
+} from "./ContactElements"
 
 
 const layout = {
@@ -31,6 +33,7 @@ const ContactForm = () => {
   };
 
   return (
+    <Container>
     <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
       <Form.Item
         name={['user', 'firstName']}
@@ -86,6 +89,7 @@ const ContactForm = () => {
         </Button>
       </Form.Item>
     </Form>
+    </Container>
   );
 };
 
