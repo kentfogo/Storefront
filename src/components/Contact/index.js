@@ -46,14 +46,18 @@ const ContactForm = () => {
       lineHeight: "2.1em",
       fontSize: "16px",
       margin: "auto",
-      width: "600px"
+      width: "600px",
+      height: "600px",
+
     }}>
       <div
       style= {{
         display: "flex",
         width: "300px",
+        height: "100px",
         padding: "10px 10px",
-        margin: "auto"
+        margin: "auto",
+
 
       }}>
       <Form.Item
@@ -64,8 +68,11 @@ const ContactForm = () => {
             required: true,
           },
         ]}
+        style={{
+          width: "300px",
+        }}
       >
-        <Input />
+        <Input style={{width:"200px", marginRight: "15px"}}/>
       </Form.Item>
       <Form.Item
         name={['user', 'lastName']}
@@ -75,9 +82,12 @@ const ContactForm = () => {
             required: true,
           },
         ]}
-        style={{paddingLeft:"10px"}}
+        style={{
+          width: "300px",
+
+        }}
       >
-        <Input style={{width:"300px"}}/>
+        <Input style={{width:"200px", }}/>
       </Form.Item>
       </div>
 
@@ -90,7 +100,7 @@ const ContactForm = () => {
           },
         ]}
       >
-        <Input />
+        <Input style={{ width: "300px"}} />
       </Form.Item>
       <Form.Item
         name={['user', 'subject']}
@@ -101,11 +111,11 @@ const ContactForm = () => {
           },
         ]}
       >
-        <Input />
+        <Input style={{ width: "300px"}}/>
 
       </Form.Item>
       <Form.Item name={['user', 'message']} label="Message">
-        <Input.TextArea />
+        <Input.TextArea style={{ width: "500px", height:"200px"}}/>
       </Form.Item>
       <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
         <Button type="primary" htmlType="submit">

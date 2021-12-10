@@ -7,9 +7,3 @@ export const Container = styled.div`
   top: 100px;
 
 `
-
-export const FormContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-
-`
