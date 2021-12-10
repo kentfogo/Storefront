@@ -17,9 +17,6 @@ const Homepage = () => {
         <OrderDiv />
         <Gallery />
         <Footer />
-
-
-
     </>
 
 
