@@ -1,130 +1,69 @@
-import React from "react";
-import { Form, Input, InputNumber, Button } from 'antd';
-/*import { Container, FormContainer } from "./ContactElements"*/
+import React, { useEffect, useState } from "react"
+import { FaBars, FaTimes } from "react-icons/fa"
+import { IconContext } from "react-icons/lib"
+import {
+  MobileIcon,
+  Nav,
+  NavbarContainer,
+  NavIcon,
 
+  NavItem,
+  NavLinks,
+  NavLogo,
+  NavMenu,
+} from "./NavbarElements"
 
-const layout = {
-  labelCol: {
-    span: 8,
-  },
-  wrapperCol: {
-    span: 16,
-  },
-};
-/* eslint-disable no-template-curly-in-string */
+const Navbar = () => {
+  const [click, setClick] = useState(false)
+  const [scroll, setScroll] = useState(false)
 
-const validateMessages = {
-  required: '${label} is required!',
-  types: {
-    email: '${label} is not a valid email!',
-    number: '${label} is not a valid number!',
-  },
-  number: {
-    range: '${label} must be between ${min} and ${max}',
-  },
-};
-/* eslint-enable no-template-curly-in-string */
+  const handleClick = () => setClick(!click)
+  const closeMobileMenu = () => setClick(false)
 
-const ContactForm = () => {
-  const onFinish = (values) => {
-    console.log(values);
-  };
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScroll(true)
+    } else {
+      setScroll(false)
+    }
+  }
+
+  useEffect(() => {
+    changeNav()
+    window.addEventListener("scroll", changeNav)
+  }, [])
 
   return (
+    <>
+      <IconContext.Provider value={{ color: "#141414" }}>
+        <Nav active={scroll} click={click}>
+          <NavbarContainer>
+            <NavLogo to="/" onClick={closeMobileMenu}>
+              <NavIcon />
+              Baked Boys
+            </NavLogo>
+            <MobileIcon onClick={handleClick} >
+              {click ? <FaTimes color = "#fff"/> : <FaBars color = "#fff"/>}
+            </MobileIcon>
+            <NavMenu onClick={handleClick} click={click}>
+              <NavItem>
+                <NavLinks to="/menu">Menu</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/products">Products</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/about">About Us</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/contact">Contact Us</NavLinks>
+              </NavItem>
+            </NavMenu>
+          </NavbarContainer>
+        </Nav>
+      </IconContext.Provider>
+    </>
+  )
+}
 
-
-    <Form
-    {...layout}
-    name="nest-messages"
-    onFinish={onFinish}
-    validateMessages={validateMessages}
-    style = {{
-      display: "block",
-      position: "relative",
-      top:" 100px",
-      letterSpacing: "1.76px",
-      lineHeight: "2.1em",
-      fontSize: "16px",
-      margin: "auto",
-      width: "600px",
-      height: "600px",
-
-    }}>
-      <div
-      style= {{
-        display: "flex",
-        width: "300px",
-        height: "100px",
-        padding: "10px 10px",
-        margin: "auto",
-
-
-      }}>
-      <Form.Item
-        name={['user', 'firstName']}
-        label="First Name"
-        rules={[
-          {
-            required: true,
-          },
-        ]}
-        style={{
-          width: "300px",
-        }}
-      >
-        <Input style={{width:"200px", marginRight: "15px"}}/>
-      </Form.Item>
-      <Form.Item
-        name={['user', 'lastName']}
-        label="Last Name"
-        rules={[
-          {
-            required: true,
-          },
-        ]}
-        style={{
-          width: "300px",
-
-        }}
-      >
-        <Input style={{width:"200px", }}/>
-      </Form.Item>
-      </div>
-
-      <Form.Item
-        name={['user', 'email']}
-        label="Email"
-        rules={[
-          {
-            type: 'email',
-          },
-        ]}
-      >
-        <Input style={{ width: "300px"}} />
-      </Form.Item>
-      <Form.Item
-        name={['user', 'subject']}
-        label="Subject"
-        rules={[
-          {
-            required: true,
-          },
-        ]}
-      >
-        <Input style={{ width: "300px"}}/>
-
-      </Form.Item>
-      <Form.Item name={['user', 'message']} label="Message">
-        <Input.TextArea style={{ width: "500px", height:"200px"}}/>
-      </Form.Item>
-      <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-        <Button type="primary" htmlType="submit">
-          Submit
-        </Button>
-      </Form.Item>
-    </Form>
-
-  );
-};
-
-export default ContactForm
+export default Navbar
