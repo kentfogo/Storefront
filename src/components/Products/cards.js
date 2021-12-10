@@ -1,13 +1,13 @@
 import React from "react";
 import "./cardelements.scss"
-import { ApplePie } from "../components/images.js"
+import { ApplePie } from "../images.js"
 
 const Card = () =>{
   return(
     <div className="wrapper">
       <CardDetail
 
-      img={ApplePie}
+      img="../images/applepie.jpg"
       title="Apple Pie"
       description="MMM America's Favorite"
       />
