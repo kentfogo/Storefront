@@ -1,8 +1,6 @@
 import React from "react";
 import { Form, Input, InputNumber, Button } from 'antd';
-import {
-Container
-} from "./ContactElements"
+/*import { Container, FormContainer } from "./ContactElements"*/
 
 
 const layout = {
@@ -33,8 +31,31 @@ const ContactForm = () => {
   };
 
   return (
-    <Container>
-    <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
+
+
+    <Form
+    {...layout}
+    name="nest-messages"
+    onFinish={onFinish}
+    validateMessages={validateMessages}
+    style = {{
+      display: "block",
+      position: "relative",
+      top:" 100px",
+      letterSpacing: "1.76px",
+      lineHeight: "2.1em",
+      fontSize: "16px",
+      margin: "auto",
+      width: "600px"
+    }}>
+      <div
+      style= {{
+        display: "flex",
+        width: "300px",
+        padding: "10px 10px",
+        margin: "auto"
+
+      }}>
       <Form.Item
         name={['user', 'firstName']}
         label="First Name"
@@ -54,9 +75,12 @@ const ContactForm = () => {
             required: true,
           },
         ]}
+        style={{paddingLeft:"10px"}}
       >
-        <Input />
+        <Input style={{width:"300px"}}/>
       </Form.Item>
+      </div>
+
       <Form.Item
         name={['user', 'email']}
         label="Email"
@@ -89,7 +113,7 @@ const ContactForm = () => {
         </Button>
       </Form.Item>
     </Form>
-    </Container>
+
   );
 };
 

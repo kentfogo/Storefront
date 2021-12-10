@@ -6,5 +6,10 @@ export const Container = styled.div`
   position: relative;
   top: 100px;
 
+`
+
+export const FormContainer = styled.div`
+  display: flex;
+  flex-direction: row;
 
 `
