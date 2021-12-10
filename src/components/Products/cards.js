@@ -1,28 +1,29 @@
 import React from "react";
 import "./cardelements.scss"
+import { ApplePie } from "../components/images.js"
 
 const Card = () =>{
   return(
     <div className="wrapper">
       <CardDetail
 
-      img="./images/gallery1.jpg"
-      title="title Test"
-      description="d test"
+      img={ApplePie}
+      title="Apple Pie"
+      description="MMM America's Favorite"
       />
 
       <CardDetail
 
-      img="./images/gallery2.jpg"
-      title="title Test"
-      description="d test"
+      img="./images/pearpie.jpg"
+      title="Pear Pie"
+      description="Take...a Pear..."
       />
 
       <CardDetail
 
-      img="./images/gallery3.jpg"
-      title="title Test"
-      description="d test"
+      img="./images/bluepie.jpg"
+      title="Blueberry Pie"
+      description="Made from the finest blueberries"
       />
     </div>
   )

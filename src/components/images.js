@@ -117,3 +117,13 @@ export function MenuBanner() {
     />
   )
 }
+
+export function ApplePie() {
+  return (
+    <StaticImage
+    src="../images/applepie.jpg"
+    placeholder="blurred"
+    loading="eager"
+      />
+    )
+}
