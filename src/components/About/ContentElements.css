@@ -45,17 +45,7 @@ width: 100%
   top: 50px;
 }
 
-.overlay{
-  content: "";
-  display: block;
-  position: relative;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 
-}
 
 .work-container{
 display: inline-block;
@@ -64,6 +54,7 @@ top: 100px;
 text-align: center;
 color:(64, 11, 124);
 width: 90%;
+margin-bottom: 100px;
 }
 
 .work-container img{
