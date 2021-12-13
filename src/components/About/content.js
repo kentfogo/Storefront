@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import fam from "./fam.jpg"
 import community from "./community.jpg"
 import "./ContentElements.css"
+import staff from "./staff.jpg"
 
 
 const AboutPage = () => {
@@ -34,30 +35,32 @@ const AboutPage = () => {
         <div className = 'c-text'>
           <h2>Community</h2>
         </div>
-        
+        <div className = "p-wrapper">
           <p>Enim Elit Himenaeos Cursus Cursus Turpis Vivamus Habitasse Pretium Massa Ipsum Vel Sociosqu Tempus Torquent Accumsan Cubilia Curae Iaculis A</p>
           <p>Enim Elit Himenaeos Cursus Cursus Turpis Vivamus Habitasse Pretium Massa Ipsum Vel Sociosqu Tempus Torquent Accumsan Cubilia Curae Iaculis A</p>
           <p>Enim Elit Himenaeos Cursus Cursus Turpis Vivamus Habitasse Pretium Massa Ipsum Vel Sociosqu Tempus Torquent Accumsan Cubilia Curae Iaculis A</p>
-          <div className = "apply-container">
-            <h2>Work with Us</h2>
-            <p>Download an Application</p>
-            <button>Application</button>
+        </div>
+        <div className = "overlay">
+          <div className = "work-container">
+            <img src={staff} />
+            <div className = "apply-container">
+             <h2>Work with Us</h2>
+             <div className = "button-wrapper">
+             <p>Download an Application</p>
+
+              <button>Application</button>
+             </div>
+           </div>
           </div>
+        </div>
+
       </div>
     </div>
     </>
   );
 };
 
-function Family() {
-  return (
-    <StaticImage
-    src="./fam.jpg"
-    placeholder="blurred"
-    loading="eager"
-      />
-    )
-}
+
 
 
 export default AboutPage;
