@@ -30,8 +30,11 @@ const AboutPage = () => {
         </div>
       </div>
       <div className = "c-wrapper">
-      <img src = {community} class="pic" />
-        <h2>Community</h2>
+        <img src = {community} class="pic" />
+        <div className = 'c-text'>
+          <h2>Community</h2>
+        </div>
+        
           <p>Enim Elit Himenaeos Cursus Cursus Turpis Vivamus Habitasse Pretium Massa Ipsum Vel Sociosqu Tempus Torquent Accumsan Cubilia Curae Iaculis A</p>
           <p>Enim Elit Himenaeos Cursus Cursus Turpis Vivamus Habitasse Pretium Massa Ipsum Vel Sociosqu Tempus Torquent Accumsan Cubilia Curae Iaculis A</p>
           <p>Enim Elit Himenaeos Cursus Cursus Turpis Vivamus Habitasse Pretium Massa Ipsum Vel Sociosqu Tempus Torquent Accumsan Cubilia Curae Iaculis A</p>

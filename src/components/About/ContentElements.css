@@ -31,3 +31,15 @@ width: 100%
   margin: 0 auto;
   padding-top: 50px;
 }
+
+.c-text{
+  text-align: left;
+}
+
+.pic{
+  display: block;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 100px;
+}
