@@ -26,12 +26,24 @@ body {
   margin: 2rem;
 }
 
+.title-card{
+  width: 100%;
+}
+
+.title-card h1{
+  position: relative;
+  right: 25%;
+  font-size: 4rem;
+}
+
+
 .wrapper{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
   gap: 2rem;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .card{

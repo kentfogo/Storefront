@@ -127,3 +127,13 @@ export function ApplePie() {
       />
     )
 }
+
+export function Family() {
+  return (
+    <StaticImage
+    src="../images/fam.jpg"
+    placeholder="blurred"
+    loading="eager"
+      />
+    )
+}

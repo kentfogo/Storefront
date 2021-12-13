@@ -1,0 +1,33 @@
+.about-wrapper{
+margin: auto;
+display: block;
+width: 100%
+}
+
+.about-container{
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.a-container{
+  position: relative;
+  top: 50px;
+}
+
+.a-container p{
+  padding-left: 10px;
+}
+
+.a-container img{
+  width: 500px;
+  height: 700px;
+}
+
+.c-wrapper{
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+}

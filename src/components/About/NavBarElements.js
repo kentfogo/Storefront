@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import { DiScala } from "react-icons/Di"
 import styled from "styled-components"
-import pastry from "./pies.jpg"
+import pastry from "./pastriesbanner.jpeg"
 
 
 export const Nav = styled.nav`
@@ -24,7 +24,6 @@ background: ${({ active }) =>
   background-position: center;
   background-repeat:no-repeat;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
-
 
   @media screen and (max-width: 960px) {
     /*background: ${({ click }) => (click ? "#fff" : "transparent")};*/
