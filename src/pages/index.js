@@ -8,11 +8,10 @@ import Footer from '../components/footer'
 
 
 
+
 const Homepage = () => {
   return (
     <>
-
-
       <Layout  pageTitle='Home' />
         <OrderDiv />
         <Gallery />
