@@ -1,10 +1,11 @@
 .menu{
+  color: #fff;
   background-image: url("./gallery1.jpg");
   background-blend-mode: darken;
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
-  height: 90vh;
+  height: 35vh;
   width: 100%;
   display: flex;
   flex-direction: column;

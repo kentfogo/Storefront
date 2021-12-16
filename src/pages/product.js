@@ -1,5 +1,5 @@
 import * as React from "react"
-import NavBar from '../components/Contact/index'
+import Layout from '../components/layout/layout'
 import Card from '../components/products/cards.js'
 import Footer from '../components/footer'
 
@@ -8,7 +8,7 @@ import Footer from '../components/footer'
 const Product = () => {
   return (
     <main>
-    <NavBar />
+    <Layout />
     <Card />
     <Footer />
 

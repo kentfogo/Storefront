@@ -1,10 +1,11 @@
 import * as React from "react"
 import { Link } from 'gatsby'
-import Layout from '../components/layout'
+import Layout from '../components/layout/layout'
 import Header from '../components/header'
 import OrderDiv from '../components/order'
 import Gallery from '../components/gallery'
 import Footer from '../components/footer'
+import { home } from "./index.module.css"
 
 
 
@@ -12,10 +13,13 @@ import Footer from '../components/footer'
 const Homepage = () => {
   return (
     <>
-      <Layout  pageTitle='Home' />
+      <div className = {home}>
+        <Layout  pageTitle='Home' />
+      </div>
         <OrderDiv />
         <Gallery />
         <Footer />
+
     </>
 
 
