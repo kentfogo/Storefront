@@ -16,7 +16,6 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
   top: 0;
   z-index: 999;
   /*background-image: url(${pastry});*/
@@ -135,8 +134,11 @@ export const NavLinks = styled(Link)`
     }
   }
 `
+export const Header = styled.div`
+  z-index: 1;
+`
 
-export const Button = styled.a`
+export const Button = styled(Link)`
   display: inline-block;
   border-radius: 3px;
   padding: .5rem 0;

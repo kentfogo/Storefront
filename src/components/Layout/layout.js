@@ -10,7 +10,8 @@ import {
   NavLinks,
   NavLogo,
   NavMenu,
-  Button
+  Button,
+  Header
 } from "./NavbarElements"
  import styled from 'styled-components';
 
@@ -71,9 +72,7 @@ const Layout = ({ pageTitle,  pageHeading, children }) => {
       </Nav>
     </IconContext.Provider>
 
-
-      <h1>The Goods Are Baked. But the Baked Are Boys.</h1>
-      <Button>Order Now</Button>
+      
 
 
     </>
