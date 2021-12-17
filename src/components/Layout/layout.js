@@ -19,7 +19,7 @@ const Layout = ({ pageTitle,  pageHeading, children }) => {
   const activeStyles = {
     color: '#fff',
     backgroundColor:'#15cdfc',
-    height: '30px'
+    height: '.01px'
   }
 
     const [click, setClick] = useState(false)
@@ -74,7 +74,7 @@ const Layout = ({ pageTitle,  pageHeading, children }) => {
 
       <h1>The Goods Are Baked. But the Baked Are Boys.</h1>
       <Button>Order Now</Button>
-      
+
 
     </>
   )
