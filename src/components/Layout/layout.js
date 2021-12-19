@@ -55,6 +55,9 @@ const Layout = ({ pageTitle,  pageHeading, children }) => {
             {click ? <FaTimes color = "#fff"/> : <FaBars color = "#fff"/>}
           </MobileIcon>
           <NavMenu onClick={handleClick} click={click}>
+          <NavItem>
+            <NavLinks to="/">Home</NavLinks>
+          </NavItem>
             <NavItem>
               <NavLinks to="/menu">Menu</NavLinks>
             </NavItem>
@@ -72,7 +75,7 @@ const Layout = ({ pageTitle,  pageHeading, children }) => {
       </Nav>
     </IconContext.Provider>
 
-      
+
 
 
     </>

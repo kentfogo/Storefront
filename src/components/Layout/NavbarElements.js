@@ -26,7 +26,7 @@ export const Nav = styled.nav`
 
 
   @media screen and (max-width: 960px) {
-    background: ${({ click }) => (click ? "transparent" : "transparent")};
+    background: ${({ click }) => (click ? "black" : "transparent")};
     transition: 0.8s all ease;
     height: auto;
     color: "#fff";
@@ -40,6 +40,11 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   max-width: 1000px;
+
+  @media screen and (max-width: 960px) {
+
+  }
+
 
 
 `
@@ -75,6 +80,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+
   }
 `
 
@@ -88,13 +94,14 @@ export const NavMenu = styled.ul`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
     top: 80px;
     top: ${({ click }) => (click ? "5%" : "-1000px")};
     opacity: 1;
     transition: all 0.2s ease;
     background: black;
+
 
   }
 `
@@ -105,9 +112,10 @@ export const NavItem = styled.li`
   bottom: 100px;
 
   @media screen and (max-width: 960px) {
-    width: 100%;
+    width: 80%;
     position: relative;
     top: 100px;
+
   }
 `
 
@@ -125,11 +133,13 @@ export const NavLinks = styled(Link)`
   @media screen and (max-width: 960px) {
     text-align: center;
     /*padding: 2rem;*/
-    padding: 0 0;
+    padding-top: 30px;
     width: 100%;
     display: table;
     color: #fff;
-    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid white;
+    transform: translateX(-6%);
 
     &:hover {
       color: #ff4040;
