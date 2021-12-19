@@ -91,7 +91,7 @@ export const NavMenu = styled.ul`
     height: 90vh;
     position: absolute;
     top: 80px;
-    top: ${({ click }) => (click ? "100%" : "-1000px")};
+    top: ${({ click }) => (click ? "5%" : "-1000px")};
     opacity: 1;
     transition: all 0.2s ease;
     background: black;
@@ -121,12 +121,15 @@ export const NavLinks = styled(Link)`
   font-family: "Sora", sans-serif;
   color: #fff;
 
+
   @media screen and (max-width: 960px) {
     text-align: center;
-    padding: 2rem;
+    /*padding: 2rem;*/
+    padding: 0 0;
     width: 100%;
     display: table;
     color: #fff;
+    margin: auto;
 
     &:hover {
       color: #ff4040;
