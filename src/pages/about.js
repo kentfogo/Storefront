@@ -1,16 +1,19 @@
 import * as React from "react";
 import { Link } from 'gatsby'
-import Navbar from '../components/about/index.js'
+import Layout from '../components/layout/layout'
 import AboutPage from "../components/About/content"
 import Footer from "../components/footer"
+import { about } from "./about.module.css"
 
 const About = () => {
   return (
-    <main>
-    <Navbar />
-    <AboutPage />
-    <Footer />
-    </main>
+    <>
+    <div className={about}>
+      <Layout />
+    </div>
+      <AboutPage />
+      <Footer />
+    </>
   );
 };
 
