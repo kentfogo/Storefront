@@ -27,7 +27,7 @@ export const Nav = styled.nav`
 
   @media screen and (max-width: 960px) {
     background: ${({ click }) => (click ? "black" : "transparent")};
-    transition: 0.8s all ease;
+    transition: .9s all ease;
     height: auto;
     color: "#fff";
   }
@@ -99,7 +99,7 @@ export const NavMenu = styled.ul`
     top: 80px;
     top: ${({ click }) => (click ? "5%" : "-1000px")};
     opacity: 1;
-    transition: all 0.2s ease;
+    transition: all 1s ease;
     background: black;
 
 
