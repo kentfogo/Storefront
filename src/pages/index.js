@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from 'gatsby'
 import Layout from '../components/layout/layout'
 import Header from '../components/header'
-import OrderDiv from '../components/order'
+import OrderDiv from '../components/order/order'
 import Gallery from '../components/gallery'
 import Footer from '../components/footer'
 import Slogan from "../components/layout/slogan"
