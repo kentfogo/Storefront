@@ -3,12 +3,18 @@
 font-family: 'Sora', sans-serif;
 }
 
+.wrapper{
+  max-width: 960px;
+  width: 95%;
+  margin: 20px auto;
+  padding: 5px;
+}
+
 .container{
   display: flex;
-  margin-top:0;
-  width: 100%;
-  padding: 10px;
-  margin: 0 auto;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px auto;
 }
 
 
@@ -17,26 +23,17 @@ font-family: 'Sora', sans-serif;
   background-color: #15cdfc;
   border-color: #15cdfc;
   margin-top: 100px;
-  margin-left: 250px;
   border-radius: 300px;
   padding: 21px 34px;
   transition: .1s opacity linear;
   font-size: 14px;
 }
 
-.buttonCon{
-  width: 25%;
-  margin-top: 75px;
-
-
-}
-
 .info{
-  width: 50%;
-  flex-wrap: wrap;
-  padding-top: 100px;
-  padding-bottom: 100px;
-
+  flex: 1;
+  border: 1px solid gray;
+  margin: 2px;
+  padding: 10px;
 }
 
 .words{
@@ -54,13 +51,22 @@ font-family: 'Sora', sans-serif;
 }
 
 @media screen and (max-width: 960px){
-  .container{
-    flex-flow: row wrap;
-    flex-basis: 100px;
-  }
-
   .info{
-    flex-flow: row wrap;
-
+    flex-basis: 40%;
   }
+
+
+}
+
+@media screen and (max-width: 680px){
+  .info{
+    flex-basis: 100%;
+    margin: 0 0 5px 0;
+  }
+
+  .button{
+    margin: 0 auto;
+  }
+
+
 }
