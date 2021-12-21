@@ -3,13 +3,12 @@ import { Link } from "gatsby"
 
 export const Button = styled(Link)`
   display: inline-block;
-  border-radius: 3px;
-  padding: .5rem 0;
+  border-radius: 300px;
+  padding: 21px 34px;
   margin: .5rem 1rem;
-  width: 11rem;
-  background: transparent;
+  background: #15cdfc;
   color: #fff;
-  border: 2px solid #fff;
+  border: 2px solid #15cdfc;
 `
 
 export const Header = styled.div`

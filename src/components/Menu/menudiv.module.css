@@ -24,7 +24,7 @@
   letter-spacing: .2rem;
   background-color: #15cdfc;
   border-color: #15cdfc;
-  margin-top: 50px;
+  margin-top: 25px;
   border-radius: 300px;
   padding: 21px 34px;
   transition: .1s opacity linear;
@@ -39,6 +39,7 @@
   padding: 35px 35px;
   transition: .1s opacity linear;
   font-size: 18px;
-  margin-top: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
   font-weight: bolder;
 }

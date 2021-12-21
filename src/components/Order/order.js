@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from 'gatsby'
 import {container, button, info, line, words, wrapper } from "./order.module.scss"
+import Button from "../layout/slogan"
 
 const OrderDiv = () =>{
   const hLine = ({ color }) => (
@@ -17,7 +18,8 @@ const OrderDiv = () =>{
     <main className={wrapper}>
       <section className={container}>
         <div className={info}>
-          <button className={button}>Order Now</button>
+          
+          <Button className={button}>Order Now</Button>
         </div>
         <div className={info}>
           <h3>HOURS - MON-FRI 7AM - 5PM, SAT 7AM-4PM, CLOSED SUN.</h3>
