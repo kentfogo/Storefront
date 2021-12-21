@@ -2,19 +2,19 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import fam from "./fam.jpg"
 import community from "./community.jpg"
-import "./ContentElements.css"
+import {aboutWrapper, aboutContainer, aContainer, cWrapper, cText, pWrapper, workContainer, applyContainer, pic, buttonWrapper} from "./ContentElements.module.css"
 import staff from "./staff.jpg"
 
 
 const AboutPage = () => {
   return(
     <>
-    <div className = "about-wrapper">
-      <div className = "about-container">
-        <div className = "a-container">
+    <div className = {aboutWrapper}>
+      <div className = {aboutContainer}>
+        <div className = {aContainer}>
           <img src={ fam } />
         </div>
-        <div className = "a-container">
+        <div className = {aContainer}>
           <h2>It starts with getting baked with family...</h2>
           <p>Sodales volutpat aptent, turpis diam, tortor potenti
           nunc erat varius tempus sapien. Lobortis at dictumst,
@@ -30,29 +30,29 @@ const AboutPage = () => {
           risus id sit etiam nec eros potenti enim.</p>
         </div>
       </div>
-      <div className = "c-wrapper">
-        <img src = {community} class="pic" />
-        <div className = 'c-text'>
+      <div className = {cWrapper}>
+        <img src = {community} className={pic} />
+        <div className = {cText}>
           <h2>Community</h2>
         </div>
-        <div className = "p-wrapper">
+        <div className = {pWrapper}>
           <p>Enim Elit Himenaeos Cursus Cursus Turpis Vivamus Habitasse Pretium Massa Ipsum Vel Sociosqu Tempus Torquent Accumsan Cubilia Curae Iaculis A</p>
           <p>Enim Elit Himenaeos Cursus Cursus Turpis Vivamus Habitasse Pretium Massa Ipsum Vel Sociosqu Tempus Torquent Accumsan Cubilia Curae Iaculis A</p>
           <p>Enim Elit Himenaeos Cursus Cursus Turpis Vivamus Habitasse Pretium Massa Ipsum Vel Sociosqu Tempus Torquent Accumsan Cubilia Curae Iaculis A</p>
         </div>
-        <div className = "overlay">
-          <div className = "work-container">
+
+          <div className = {workContainer}>
             <img src={staff} />
-            <div className = "apply-container">
+            <div className = {applyContainer}>
              <h2>Work with Us</h2>
-             <div className = "button-wrapper">
+             <div className = {buttonWrapper}>
              <p>Download an Application</p>
 
               <button>Application</button>
              </div>
            </div>
           </div>
-        </div>
+
 
       </div>
     </div>

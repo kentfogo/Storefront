@@ -1,31 +1,32 @@
-.about-wrapper{
-margin: auto;
-display: block;
-width: 100%
+.aboutWrapper{
+margin: 0 auto;
+width: 95%;
+max-width: 960px;
 }
 
-.about-container{
+.aboutContainer{
   display: flex;
-  width: 60%;
-  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: center;
   margin: 0 auto;
 }
 
-.a-container{
+.aContainer{
   position: relative;
   top: 50px;
+  flex: 1;
 }
 
-.a-container p{
+.aContainer p{
   padding-left: 10px;
 }
 
-.a-container img{
+.aContainer img{
   width: 500px;
   height: 700px;
 }
 
-.c-wrapper{
+.cWrapper{
   display: block;
   width: 60%;
   margin: 0 auto;
@@ -34,21 +35,21 @@ width: 100%
 
 }
 
-.c-text h2{
+.cText h2{
   text-align: left;
   position: relative;
   left: 20px;
   top: 50px;
 }
 
-.p-wrapper{
+.pWrapper{
   position: relative;
   top: 50px;
 }
 
 
 
-.work-container{
+.workContainer{
 display: inline-block;
 position: relative;
 top: 100px;
@@ -58,12 +59,12 @@ width: 90%;
 
 }
 
-.work-container img{
+.workContainer img{
 width: 100%;
 filter: brightness(70%);
 }
 
-.apply-container {
+.applyContainer {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -73,13 +74,13 @@ filter: brightness(70%);
 
 .pic{
   display: block;
-  width: 70%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   padding-top: 100px;
 }
 
-.button-wrapper{
+.buttonWrapper{
   position: relative;
   display: flex;
   flex-flow: column;
@@ -94,4 +95,17 @@ button{
   padding: 21px 34px;
   transition: .1s opacity linear;
   font-size: 14px;
+}
+
+@media screen and (max-width: 960px){
+  .aContainer{
+    flex-basis: 40%;
+    margin: 0 0 5px 0;
+  }
+}
+
+@media screen and (max-width: 680px){
+  .aContainer{
+    flex-basis: 0%;
+  }
 }
