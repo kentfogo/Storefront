@@ -36,7 +36,6 @@ max-width: 960px;
 }
 
 .cText h2{
-  text-align: left;
   position: relative;
   left: 20px;
   top: 50px;
@@ -101,6 +100,27 @@ button{
   .aContainer{
     flex-basis: 40%;
     margin: 0 0 5px 0;
+    transition: all .5s ease;
+  }
+
+  .workContainer{
+    margin: 50px 50px;
+    background: black;
+    transition: all .5s ease;
+    h2{
+      color: black;
+    }
+    p{
+      color: black;
+    }
+    img{
+      display: none;
+      transition: all .5s ease;
+    }
+  }
+
+  button{
+    flex-shrink: 2;
   }
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import fam from "./fam.jpg"
 import community from "./community.jpg"
-import {aboutWrapper, aboutContainer, aContainer, cWrapper, cText, pWrapper, workContainer, applyContainer, pic, buttonWrapper} from "./ContentElements.module.css"
+import {aboutWrapper, aboutContainer, aContainer, cWrapper, cText, pWrapper, workContainer, applyContainer, pic, buttonWrapper} from "./ContentElements.module.scss"
 import staff from "./staff.jpg"
 
 
