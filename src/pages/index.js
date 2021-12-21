@@ -7,6 +7,7 @@ import Gallery from '../components/gallery'
 import Footer from '../components/footer'
 import Slogan from "../components/layout/slogan"
 import { home } from "./index.module.css"
+import GlobalStyle from "../components/globalstyles"
 
 
 

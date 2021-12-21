@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from 'gatsby'
-import {container, containerInner, siteinfo } from "./footer.module.css"
+import {container, containerInner, siteinfo } from "./footer.module.scss"
 
 const Footer = () =>{
   return(

@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from 'gatsby'
-import { container, buttonContainer, button, orderButton } from "./menudiv.module.css";
+import { container, buttonContainer, button, orderButton } from "./menudiv.module.scss";
 
 
 const MenuDiv = () =>{
