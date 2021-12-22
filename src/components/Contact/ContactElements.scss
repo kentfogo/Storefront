@@ -4,7 +4,7 @@
   box-shadow: 0 5px 8px 0 rgba(0,0,0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   position: relative;
   border-radius: 10px;
-  height: 700px;
+  height: 800px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: #1f1f1f;
@@ -98,11 +98,18 @@
 }
 
 .form-label{
-  display: inline-block;
+  display: flex;
   font-size: 1.1rem;
   margin-bottom: 10px;
   color: #fff;
-  font-family: 'Sora', sans-serif;
+  justify-content: center;
+
+}
+
+label{
+  h2{
+    text-align: center;
+  }
 }
 
 .form-input{
@@ -114,6 +121,7 @@
   width: 100%;
   border: none;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 #firstname.form-input,#lastname.form-input {

@@ -1,7 +1,7 @@
 import React from 'react';
-import "./ContactElements2.css"
+import "./ContactElements.scss"
 
-const ContactForm = () =>{
+const ContactFish = () =>{
   return(
     <>
     <div className = "form-container">
@@ -84,4 +84,4 @@ const ContactForm = () =>{
   );
 };
 
-export default ContactForm
+export default ContactFish

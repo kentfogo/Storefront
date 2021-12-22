@@ -10,6 +10,7 @@ $clr-gray400: #767b91;
 $clr-gray500: #4f546c;
 $clr-gray600: #2a324b;
 $clr-gray700: #161d34;
+$clr-blue: #15cdfc;
 
 /*   border radius */
 $radius: 0.2rem;
@@ -31,7 +32,7 @@ body {
 }
 
 .title-card h1{
-  
+  text-align: center;
   right: 25%;
   font-size: 4rem;
 }
@@ -76,12 +77,20 @@ $clr-gray300;
       font-family: inherit;
       font-weight: bold;
       margin: 1rem;
-      border: 2px solid $clr-primary;
+      border: 2px solid $clr-blue;
       background: transparent;
-      color: $clr-primary;
+      color: $clr-blue;
       border-radius: $radius;
           transition:
         background 200ms ease-in, color 200ms ease-in;
+    }
+
+    h2{
+      text-align:center;
+    }
+
+    p{
+      text-align:center;
     }
 
     &:hover {
@@ -90,7 +99,7 @@ $clr-gray300;
     }
 
     &:hover &__btn{
-      background: $clr-primary;
+      background: $clr-blue;
       color: white;
     }
 }
