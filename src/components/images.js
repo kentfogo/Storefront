@@ -137,3 +137,19 @@ export function Family() {
       />
     )
 }
+
+export function Fam() {
+  return (
+    <StaticImage
+    src="../images/fam.jpg"
+    alt="goods"
+    placeholder="blurred"
+    layout="constrained"
+    width= {500}
+    height= {700}
+    objectFit= "cover"
+    loading="eager"
+    style={{ margin: '10px 10px'}}
+      />
+    )
+}
