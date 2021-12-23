@@ -35,10 +35,19 @@ max-width: 960px;
 
 }
 
+.communitypic{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
 .cText h2{
   position: relative;
   left: 20px;
   top: 50px;
+  text-align: center;
 }
 
 .pWrapper{
@@ -55,34 +64,31 @@ top: 100px;
 text-align: center;
 color:(64, 11, 124);
 width: 90%;
-
 }
 
-.workContainer img{
-width: 100%;
-filter: brightness(70%);
+.staffpic{
+  display: block;
+  width: 576px;
+  height: 384px;
+  margin: 0 auto;
+  filter: brightness(70%);
+
 }
 
 .applyContainer {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 57%;
   transform: translate(-50%,-50% );
   color: #fff;
-}
-
-.pic{
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  padding-top: 100px;
+  text-align: center;
 }
 
 .buttonWrapper{
   position: relative;
   display: flex;
   flex-flow: column;
+  justify-content: center;
 }
 
 button{

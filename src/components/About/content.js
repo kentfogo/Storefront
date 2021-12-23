@@ -1,7 +1,10 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import ProgressiveImage from 'react-progressive-image';
 import community from "./community.jpg"
-import {aboutWrapper, aboutContainer, aContainer, cWrapper, cText, pWrapper, workContainer, applyContainer, pic, buttonWrapper} from "./ContentElements.module.scss"
+import staff from "./staff.jpg"
+import {aboutWrapper, aboutContainer, aContainer, cWrapper, cText, pWrapper, workContainer, applyContainer, communitypic, staffpic, buttonWrapper} from "./ContentElements.module.scss"
+import styled from 'styled-components';
 
 
 
@@ -22,37 +25,15 @@ function Fam() {
     );
 };
 
-function StaffPic() {
-  return (
-    <StaticImage
-    src="../images/staff.jpg"
-    alt="goods"
-    placeholder="blurred"
-    layout="constrained"
-    width= {600}
-    height= {300}
-    objectFit= "cover"
-    loading="eager"
-    style={{ margin: '10px 10px'}}
-      />
-    );
+function CommunityPic(){
+  return(
+    <ProgressiveImage src = "./community.jpg" placeholder="../images/staff.jpg">
+      {src => <img src={src} alt="an image" />}
+    </ProgressiveImage>
+  );
 };
 
-function CommunityPic() {
-  return (
-    <StaticImage
-    src="../images/community.jpg"
-    alt="goods"
-    placeholder="blurred"
-    layout="constrained"
-    width= {600}
-    height= {300}
-    objectFit= "cover"
-    loading="eager"
-    style={{ margin: '10px 10px'}}
-      />
-    );
-};
+
 
 const AboutPage = () => {
   return(
@@ -79,7 +60,8 @@ const AboutPage = () => {
         </div>
       </div>
       <div className = {cWrapper}>
-        <StaffPic />
+
+      <img src={community} className={communitypic}/>
         <div className = {cText}>
           <h2>Community</h2>
         </div>
@@ -90,17 +72,7 @@ const AboutPage = () => {
         </div>
 
           <div className = {workContainer}>
-          <StaticImage
-          src="../images/community.jpg"
-          alt="goods"
-          placeholder="blurred"
-          layout="constrained"
-          width= {600}
-          height= {300}
-          objectFit= "cover"
-          loading="eager"
-          style={{ margin: '10px 10px'}}
-            />
+            <img src={staff} className={staffpic}/>
             <div className = {applyContainer}>
              <h2>Work with Us</h2>
              <div className = {buttonWrapper}>
