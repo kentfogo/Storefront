@@ -95,9 +95,11 @@ export function Gallery6() {
     layout="constrained"
     width= {1000}
     height= {900}
-    objectFit= "cover"
+    objectFit= 'none'
+    objectPosition= {'50% 50%' }
     style=  {{ margin: '10px 10px'}}
-    loading="eager"
+    loading="lazy"
+    aspectRatio={16/9}
       />
     )
 }
