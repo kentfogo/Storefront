@@ -100,6 +100,16 @@ button{
   padding: 21px 34px;
   transition: .1s opacity linear;
   font-size: 14px;
+
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &:hover{
+    background-color: rgba(21, 205, 252, .8);
+    transition: background 200ms ease-in, color 200ms ease-in
+  }
 }
 
 @media screen and (max-width: 960px){

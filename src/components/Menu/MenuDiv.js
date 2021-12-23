@@ -9,9 +9,9 @@ const MenuDiv = () =>{
       <h1>Menus</h1>
     {/* Desserts Button*/}
     <div className={buttonContainer}>
-      <button className={button}>Desserts</button>
-      <button className={button}>Brunch</button>
-      <button className={orderButton}>Order Now</button>
+      <button className={button}><Link to="">Desserts</Link></button>
+      <button className={button}><Link to="">Brunch</Link></button>
+      <button className={orderButton}><Link to="">Order Now</Link></button>
     </div>
 
     {/*Brunch Button*/}

@@ -25,12 +25,24 @@
   font-weight: bolder;
   letter-spacing: .2rem;
   background-color: #15cdfc;
-  border-color: #15cdfc;
+  border: 2px solid #15cdfc;
   margin-top: 25px;
   border-radius: 300px;
   padding: 21px 34px;
   transition: .1s opacity linear;
   font-size: 14px;
+  text-decoration: none;
+
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &:hover{
+    background-color: rgba(21, 205, 252, .8);
+    transition: background 200ms ease-in, color 200ms ease-in
+  }
+
 }
 
 .orderButton{
@@ -44,4 +56,14 @@
   margin: 0 auto;
   margin-top: 50px;
   font-weight: bolder;
+
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &:hover{
+    background-color: rgba(0, 0, 0, .8);
+    transition: background 200ms ease-in, color 200ms ease-in;
+  }
 }

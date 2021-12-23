@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "gatsby"
 import styled from 'styled-components'
 import {
   Button,
@@ -13,7 +14,7 @@ const Slogan = () =>{
       <Header>
         <Phrase>The Boys are Baked. The Goods Are Too.</Phrase>
         <Container>
-        <Button>Order Now</Button>
+        <Button to="">Order Now</Button>
         </Container>
       </Header>
     </>

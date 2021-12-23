@@ -5,6 +5,7 @@ import community from "./community.jpg"
 import staff from "./staff.jpg"
 import {aboutWrapper, aboutContainer, aContainer, cWrapper, cText, pWrapper, workContainer, applyContainer, communitypic, staffpic, buttonWrapper} from "./ContentElements.module.scss"
 import styled from 'styled-components';
+import { Link } from "gatsby";
 
 
 
@@ -78,7 +79,7 @@ const AboutPage = () => {
              <div className = {buttonWrapper}>
              <p>Download an Application</p>
 
-              <button>Application</button>
+              <button><Link to="">Application</Link></button>
              </div>
            </div>
           </div>

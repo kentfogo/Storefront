@@ -54,7 +54,7 @@ export const NavLogo = styled(Link)`
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
-  font-family: "Sora", sans-serif;
+  font-family: "Oxygen", sans-serif;
   color: #fff;
   font-size: 1.5rem;
   display: flex;
@@ -65,6 +65,7 @@ export const NavLogo = styled(Link)`
 
 export const NavIcon = styled(DiScala)`
   margin: 0 0.5rem 0 2rem;
+  color: #fff;
 
 `
 
@@ -126,7 +127,7 @@ export const NavLinks = styled(Link)`
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
-  font-family: "Sora", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #fff;
 
 

@@ -17,6 +17,12 @@ export const Button = styled(Link)`
   color: #fff;
   border: 2px solid #15cdfc;
   text-align: center;
+  text-decoration: none;
+
+  &:hover{
+    background-color: rgba(21, 205, 252, .8);
+    transition: background 200ms ease-in, color 200ms ease-in
+  }
 `
 
 export const Header = styled.div`
