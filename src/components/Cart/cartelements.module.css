@@ -25,11 +25,11 @@ a{
   justify-content: space-between;
 }
 
-.col-1{
+.colOne{
   flex: 1
 }
 
-.col-2{
+.colTwo{
   flex: 2
 }
 
@@ -40,7 +40,7 @@ a{
   border-radius: .5rem;
 }
 
-.row.center{
+.rowCenter{
   align-items: center;
 
 }
@@ -77,6 +77,6 @@ button.badge{
   width: 1.5rem;
 }
 
-text.right{
+.textRight{
   text-align: center;
 }

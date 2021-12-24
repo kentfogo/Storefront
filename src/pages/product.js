@@ -13,6 +13,7 @@ const Product = () => {
     <div className={product}>
       <Layout />
     </div>
+
     <Card />
     <Footer />
 

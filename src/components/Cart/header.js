@@ -1,21 +1,23 @@
-import React from "react"
-import Link from "gatsby"
-import {row, block, center} from "/cart.module.css"
+import React from "react";
+import { Link } from "gatsby";
+import { row, colOne, colTwo, block, rowCenter, badge, add, remove } from "./cartelements.module.css";
+import cx from 'classnames';
 
-export default function Header(props) {
+
+const Header = (props) => {
   const {countCartItems} = props;
   return(
-  <header className={row block center}>
+  <header className={cx(row, block, rowCenter)}>
     <div>
-      <Link to="">
+      <Link to="#/">
         <h1>Small Shopping Cart</h1>
-      <Link>
+      </Link>
     </div>
     <div>
       <Link to="#/cart">
       Cart { ''}
-      {countCartItems ? (
-        <button className={badge}>{countCartItems}</button>
+      {props.countCartItems ? (
+        <button className={badge}>{props.countCartItems}</button>
       ) : (
         ''
       )}</Link>
@@ -24,3 +26,5 @@ export default function Header(props) {
   </header>
   );
 };
+
+export default Header;

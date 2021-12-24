@@ -1,10 +1,11 @@
 import React from 'react'
+import { row, colOne, colTwo, block, rowCenter, badge, add, remove, small } from "./cartelements.module.css"
 
-export default function Product() {
+function Product(props) {
   const { product, onAdd } = props;
   return(
     <div>
-      <img className={small} src={product.image} alt={product.name} </img>
+      <img className={small} src={product.image} alt={product.name} />
       <h3>{product.name}</h3>
       <div>${product.price}</div>
       <div>
@@ -14,3 +15,5 @@ export default function Product() {
 
   );
 };
+
+export default Product
