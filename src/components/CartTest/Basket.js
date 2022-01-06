@@ -1,15 +1,13 @@
-import React from "react"
-import { row, colOne, colTwo, block, rowCenter, badge, add, remove, textRight } from "./cartelements.module.css"
-import cx from 'classnames'
+import React from 'react';
 
-function Basket(props) {
+export default function Basket(props) {
   const { cartItems, onAdd, onRemove } = props;
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
   const taxPrice = itemsPrice * 0.14;
   const shippingPrice = itemsPrice > 2000 ? 0 : 20;
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
   return (
-    <aside className="block col-1">
+    <aside className="block col-1 open">
       <h2>Cart Items</h2>
       <div>
         {cartItems.length === 0 && <div>Cart is empty</div>}
@@ -59,7 +57,7 @@ function Basket(props) {
             </div>
             <hr />
             <div className="row">
-              <button onClick={() => alert('Implement Checkout!')}>
+              <button className="cart" onClick={() => alert('Implement Checkout!')}>
                 Checkout
               </button>
             </div>
@@ -69,5 +67,3 @@ function Basket(props) {
     </aside>
   );
 }
-
-export default Basket

@@ -1,6 +1,6 @@
 import React from "react"
 import Product from './Product'
-import { row, colOne, colTwo, block, rowCenter, badge, add, remove } from "./cartelements.module.css"
+import { row, colTwo, block } from "./cartelements.module.css"
 import cx from 'classnames'
 
 function Main(props) {

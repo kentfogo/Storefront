@@ -9,19 +9,19 @@ const Header = (props) => {
   return(
   <header className={cx(row, block, rowCenter)}>
     <div>
-      <Link to="#/">
+      <a href="#/">
         <h1>Small Shopping Cart</h1>
-      </Link>
+      </a>
     </div>
     <div>
-      <Link to="#/cart">
-      Cart { ''}
+      <a href="#/cart">
+      Cart{''}
       {props.countCartItems ? (
         <button className={badge}>{props.countCartItems}</button>
       ) : (
         ''
-      )}</Link>
-      <Link to ="#/signin">SignIn</Link>
+      )}</a>{''}
+      <a href="#/signin">SignIn</a>
     </div>
   </header>
   );

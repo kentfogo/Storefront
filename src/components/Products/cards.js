@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./cardelements.scss"
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from 'gatsby';
+import App from "../carttest/app"
+
 
 const Card = () =>{
   return(
@@ -58,6 +61,9 @@ const Card = () =>{
 }
 
 const CardDetail = (props) =>{
+
+const [buttonPopup, setButtonPopup] = useState(false);
+
   return(
     <>
       <div className="card">
@@ -68,7 +74,11 @@ const CardDetail = (props) =>{
           <h2 className="card__title">{props.title}</h2>
           <p className="card-description">{props.description}</p>
         </div>
-          <button className ="card__btn">View</button>
+
+          <button onClick={() => setButtonPopup(true)}className ="card__btn" >Add to Cart</button>
+          <aside>
+            <App trigger={buttonPopup} setTrigger={setButtonPopup} />
+          </aside>
       </div>
 
     </>

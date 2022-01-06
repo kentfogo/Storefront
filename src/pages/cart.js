@@ -1,7 +1,9 @@
 import * as React from "react"
 import Footer from '../components/footer'
 import GlobalStyle from "../components/globalstyles"
-import Cart from "../components/Cart/Cart"
+import App2 from "../components/Cart3/App2"
+
+
 
 
 
@@ -9,9 +11,9 @@ const CartPage = () => {
   return (
     <>
 
-    <Cart />
+    <App2 />
 
-    <Footer />
+
 
     </>
   )
