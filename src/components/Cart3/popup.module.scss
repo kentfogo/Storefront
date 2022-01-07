@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
   width: 100%;
   height: 100vh;
   background-color: rgba(0,0,0,.2);
@@ -11,14 +12,26 @@
   align-items: center;
 }
 .popupInner{
-  position: relative;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  width: 85vw;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
   padding: 32px;
-  width: 100%;
-  max-width: 640px;
   background-color: #fff;
-}
-.popupInner .closeBtn{
-  position: absolute;
-  top: 16px;
-  right: 16px;
+  overflow: hidden auto;
+  transition: opacity .3s, visibility .3s, transform .3s;
+  :active{
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+  .closeBtn{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
 }
