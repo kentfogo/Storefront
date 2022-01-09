@@ -1,18 +1,18 @@
 import * as React from "react"
 import Footer from '../components/footer'
 import GlobalStyle from "../components/globalstyles"
-import App2 from "../components/Cart3/App2"
+import Test from "../components/Test/Test"
 
 
 
 
 
-const CartPage = () => {
+const TestPage = () => {
   return (
     <>
 
-    <App2 />
 
+    <Test />
 
 
 
@@ -20,4 +20,4 @@ const CartPage = () => {
   )
 }
 
-export default CartPage;
+export default TestPage;
