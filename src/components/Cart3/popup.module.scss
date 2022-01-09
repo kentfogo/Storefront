@@ -49,15 +49,13 @@
   }
 }
 
-.backdrop{
+.app2{
   opacity: 0;
-  display: block;
   height: 100vh;
   width: 100%;
 }
-.backdrop1{
-  opacity:1;
-  display: block;
+.app2Active{
+  opacity: 10;
   height: 100vh;
   width: 100%;
 }

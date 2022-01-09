@@ -14,8 +14,8 @@ function Test () {
         </p>
         <div className={`description ${isOpen ? 'description-active' : ''}`}>
             fjaksdddddddddddddddddddddddd
-              fdsaffffffffffffffffffffff
-              errrreeeeeeeeeeee
+            fdsaffffffffffffffffffffff
+            errrreeeeeeeeeeee
         </div>
       </div>
     </div>

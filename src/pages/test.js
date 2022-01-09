@@ -4,18 +4,10 @@ import GlobalStyle from "../components/globalstyles"
 import Test from "../components/Test/Test"
 
 
-
-
-
 const TestPage = () => {
   return (
     <>
-
-
-    <Test />
-
-
-
+      <Test />
     </>
   )
 }
