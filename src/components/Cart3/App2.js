@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import PopupCart from './popupcart'
-import {popup, popupInner,addBtn} from "./popup.module.scss"
+import {popupInner, addBtn, backdrop, backdrop1} from "./popup.module.scss"
+import cx from 'classnames'
+import {CSSTransition} from 'react-transition-group';
 import "./cart.scss"
 import Header from './Header';
 import Main from './Main';
@@ -37,13 +39,19 @@ const App2 = (props) =>{
   };
 
   const [buttonPopup, setButtonPopup] = useState(false);
+  const popSwitch = () =>{
+    buttonPopup ? setButtonPopup(false) : setButtonPopup(true);
+  }
+
   return(
     <div className="app2">
+    <div className={popSwitch ? "backdrop" : "backdrop1" }>
       <main>
         <h1>Popups</h1>
         <br/><br/>
         <button onClick={() =>setButtonPopup(true)}>Add to Cart</button>
       </main>
+    </div>
       <PopupCart trigger={buttonPopup} setTrigger={setButtonPopup}>
         <h3> My Popup</h3>
         <Header countCartItems={cartItems.length}></Header>
@@ -56,6 +64,7 @@ const App2 = (props) =>{
           ></Basket>
           </div>
       </PopupCart>
+
     </div>
   );
 }
